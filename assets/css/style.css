@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+   font-family: lato, sans-serif, arial;
+   margin:0;
+}
+.ui-jqgrid-htable th,
+.ui-jqgrid tr.jqgrow td{ 
+    text-transform: capitalize; 
+}
+.ui-jqgrid-htable th div{
+    font-weight: bold;
+}
+#menu {
+  margin-bottom: 30px;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3FC300;
+}
+
+#menu ul li {
+    float: left;
+}
+
+#menu  ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#menu  ul li a:hover,
+#menu .active {
+    background-color: #ddd;
+    color:black;
+}
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+.ui-tabs-panel #subtitle{
+  display:none;
+}
+
+.number-columns{
+  font-weight: 800 !important;
+}
+.add-new-row {
+  padding:15px;
+  margin:15px;
+  font-size:16px;
+  background:red;
+  color:white;
+}
+
+/* grouping */
+.jqgroup.ui-row-ltr {
+  background: #888 !important;
+}
+.jqgroup.ui-row-ltr td {
+  color: white !important;
+  font-size: 15px !important;
+}
+
+/* ******************** card view ******************** */
+* {
+  box-sizing: border-box;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 15px 15px;
+}
+
+.column.half {
+  float: left;
+  width: 50%;
+  padding: 15px 15px 100px 15px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  height: 500px;
+}
+
+.card img.main-photo {
+  max-height: 210px;
+}
+
+.center {
+  text-align: center;
+}
+
+.centered {
+	margin: 0;
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+}
+
+
+.left {
+  text-align: left;
+}
+
+.ui-jqgrid-bootstrap.ui-jqgrid {
+  margin: 0 15px;
+}
+
+.btn-tabs {
+  padding-left: 15px;
+  font-size:16px
+}
+
+.btn-tabs a.btn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-tabs a.btn.btn-primary {
+  background: #ddd;
+  color: black;
+  border: 1px solid #ddd;
+  font-size: 16px
+  ;
+}
+
+.source-code-container {
+  margin-top: 100px;
+}
+.source-code-container h2 {
+  text-align: center;
+}
+.source-code {
+  border: 1px solid #888; margin:0 100px;padding:5px
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
